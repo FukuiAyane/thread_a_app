@@ -1,0 +1,238 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header{
+  width: 100%;
+  height: 60px;
+  background-color: #FF7E7E;
+  position: fixed;
+  box-shadow: 2px 2px 2px gray;
+  top: 0;
+  z-index: 1;
+}
+div#content #logout{
+  padding-left: 20px;
+}
+div#content #logout a{
+  text-decoration: none;
+}
+div#user_account{
+  height: 50px;
+  margin-left: 20px;
+  position: relative;
+  width: 15%;
+  height: 100%;
+  float: right;
+}
+div#my_icon{
+  width: 30px;
+  height: 30px;
+  background-color: #F1F1F1;
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+}
+div#my_name{
+  line-height: 50px;
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  left: 40px;
+  line-height: 60px;
+}
+// div#content{
+//   margin-top: 80px;
+// }
+div.clear{
+  clear: both;
+}
+div#header_logo{
+  color: #fff;
+  height: 100%;
+  line-height: 60px;
+  width: 15%;
+  text-align: center;
+  float: left;
+}
+div#left_content{
+  background-color: #F1F1F1;
+
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+  margin-top: 170px;
+}
+div#left_content_head{
+  width: 30%;
+  height: 60px;
+  box-shadow: 1px 1px 3px #FF3838;
+  color: #FF3838;
+  position: fixed;
+  top: 120px;
+  background-color: #F1F1F1;
+  z-index: 1;
+  margin-bottom: 0;
+}
+div#friend{
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+}
+div#talk{
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+}
+div#right_content{
+  background-color: #FFFDEF;
+  // height: 600px;
+  width: 70%;
+  float: left;
+  position: relative;
+  margin-top: 170px;
+}
+div#right_content_head{
+  z-index: 1;
+  height: 60px;
+  width: 70%;
+  box-shadow: 1px 1px 3px #FF3838;
+  background-color: #FFFDEF;
+  position: fixed;
+  top: 120px;
+  margin-bottom: 0;
+}
+div#your_name{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+  color: #FF3838;
+}
+div.talk_text{
+  height: 50px;
+  margin-left: 20px;
+  position: relative;
+}
+div.user_icon{
+  width: 30px;
+  height: 30px;
+  background-color: #F1F1F1;
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+}
+div.talk_text p{
+  line-height: 50px;
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  left: 40px;
+}
+
+div.friend{
+  height: 50px;
+  margin-left: 20px;
+  position: relative;
+}
+div.friend_user_icon{
+  width: 30px;
+  height: 30px;
+  background-color: #FFFDEF;
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+}
+div.friend_name{
+  line-height: 50px;
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  left: 40px;
+}
+h1{
+  color: red;
+}
+div#write_msg{
+  height: 100px;
+}
+div#write_msg form{
+  height: 50px;
+  position: relative;
+}
+div#write_msg input.write{
+  width: 500px;
+  margin-left: 20px;
+  height: 50px;
+  border: 4px solid #FF7E7E;
+  border-radius: 50px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+div#write_msg input.send{
+  color: white;
+  border: #222;
+  background-color: #FF7E7E;
+  padding: 5px 25px 5px 25px;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  margin-left: 10px;
+  border-radius: 40px;
+  font-size: 16px;
+}
+div#logout_button{
+  border: #222;
+  background-color: white;
+  padding: 10px 25px 10px 25px;
+  display: inline-block;
+  top: 0;
+  margin-left: 10px;
+  border-radius: 50px;
+  height: 34px;
+  width: 100px;
+  float: right;
+  margin-top: 13px;
+  position: relative;
+}
+div#logout_button a{
+  color: #FF7E7E;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 34px;
+}
+div#login_msg{
+  z-index: 1;
+  position: fixed;
+  top: 60px;
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 0;
+}
+h2{
+  color: #FF7E7E;
+}

@@ -1,0 +1,11 @@
+<h1>投稿ページだよ</h1>
+<%= form_tag("/posts/create") do %>
+<textarea name="content" rows="8" cols="80"></textarea>
+<input type="submit" name="" value="投稿">
+<% end %>
+
+<% @posts.each do |post| %>
+<div class="toukou">
+<%= post.content %>
+</div>
+<% end %>

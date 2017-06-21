@@ -1,0 +1,85 @@
+
+    <header>
+      <div id="header_logo">
+        Thread
+      </div>
+      <div id="user_account">
+        <div id="my_icon">
+        </div>
+        <div id="my_name"><%= current_user.username %></div>
+      </div>
+      <div id="logout_button">
+        <% if user_signed_in? %>
+        <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+        <% else %>
+        <%= link_to('Login', new_user_session_path) %>
+        <% end %>
+      </div>
+      <div class="clear"></div>
+    </header>
+    <div id="content">
+      <div id="login_msg">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
+
+      <div id="left_content">
+        <div id="left_content_head">
+          <div id="friend">
+            friend
+          </div>
+          <div id="talk">
+            talk
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="friend_area">
+
+          <% @users.each do |user| %>
+          <div class="friend">
+
+              <div class="friend_user_icon">
+
+              </div>
+              <div class="friend_name">
+              <!-- <%= link_to(user.username, "/#{user.id}") %> -->
+              <%= user.username %>
+            </div>
+          </div>
+            <% end %>
+        </div>
+      </div>
+      <div id="right_content">
+        <div id="right_content_head">
+          <div id="your_name">
+            sample
+          </div>
+        </div>
+        <div class="talk_area">
+          <div class="talk_text">
+            <div class="user_icon">
+            </div>
+            <p>sample</p>
+          </div>
+
+
+          <% @msgs.each do |msg| %>
+          <div class="talk_text">
+            <div class="user_icon">
+            </div>
+              <p><%= msg.content %></p>
+          </div>
+          <% end %>
+
+          <div id="write_msg">
+            <%= form_tag("/create")do %>
+              <input class="write" type="text" name="content" value="">
+              <!-- <textarea name="content" rows="8" cols="80"></textarea> -->
+              <input class="send" type="submit" name="" value="送信">
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+
+    </div>

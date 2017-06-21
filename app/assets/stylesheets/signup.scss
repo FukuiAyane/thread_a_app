@@ -1,0 +1,40 @@
+div#signup_page{
+  padding-top: 40px;
+  text-align: center;
+  background-color: #F1F1F1;
+  height: 730px;
+}
+
+div{
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+div#signup_page h2{
+  text-align: center;
+  font-size: 30px;
+}
+
+div#signup_page input#user_email{
+  width: 300px;
+  height: 35px;
+}
+div#signup_page input#user_password{
+  width: 300px;
+  height: 35px;
+}
+div#signup_page input#user_password_confirmation{
+  width: 300px;
+  height: 35px;
+}
+
+div.actions input{
+  width: 300px;
+  height: 35px;
+}
+
+div#signup_page a{
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
