@@ -78,6 +78,11 @@
               <input class="send" type="submit" name="" value="送信">
             <% end %>
           </div>
+          <div id="destroy_msg">
+            <%= form_tag("/destroy")do %>
+              <input class="send" type="submit" name="" value="今までのチャットを削除">
+            <% end %>
+          </div>
         </div>
       </div>
       <div class="clear"></div>
