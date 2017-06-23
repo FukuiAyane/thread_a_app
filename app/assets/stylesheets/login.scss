@@ -1,8 +1,28 @@
-div#login_page{
+div.form{
   padding-top: 40px;
-  text-align: center;
   background-color: #F1F1F1;
   height: 730px;
+}
+
+div.form div#content{
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+div.form div.field{
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+div.form div.actions{
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 div{
@@ -10,27 +30,43 @@ div{
   margin-bottom: 20px;
 }
 
-div#login_page h2{
+div.form h2{
   text-align: center;
   font-size: 30px;
 }
 
-div#login_page input#user_email{
+div.form input#user_username{
   width: 300px;
   height: 35px;
+  border: none;
+  border-bottom: 1px solid gray;
 }
-div#login_page input#user_password{
+
+
+div.form input#user_email{
   width: 300px;
   height: 35px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+div.form input#user_password{
+  width: 300px;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid gray;
 }
 
 div.actions input{
   width: 300px;
-  height: 35px;
+  height: 40px;
+  border: 0px solid ;
+  background-color: #f16272;
+  color: white;
 }
 
-div#last_items a{
+div#link a{
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
+  text-align: center;
 }
